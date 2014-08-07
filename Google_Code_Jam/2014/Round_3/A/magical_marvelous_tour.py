@@ -3,6 +3,8 @@
 """Solves Google Code Jam 2014 Round 3 Problem A
 (https://code.google.com/codejam/contest/3024486/dashboard#s=p0)
 "Magical, Marvelous Tour"
+
+NOTE: algorithm does not scale to Large dataset
 """
 
 import sys
