@@ -17,7 +17,7 @@ def read_input():
         themselves lists
 
     Raises:
-        None
+        AssertionError: on invalid input data
     """
 
     lines = sys.stdin.read().splitlines()
