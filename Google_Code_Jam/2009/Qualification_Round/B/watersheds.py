@@ -151,7 +151,7 @@ def get_cell_drain(map_altitudes, cell):
     return cell_altitude_min if cell_altitude_min != cell else None
 
 
-def fix_labels(map_labels):
+def finalize_labels(map_labels):
     """Changes watershed basin labels to adhere to ordering specified in
     problem.
 
@@ -218,7 +218,7 @@ def solve(map_altitudes):
             else:
                 children[cell_drain] = [cell]
     basin_labels = get_map_labels(map_height, map_width, children)
-    fix_labels(basin_labels)
+    finalize_labels(basin_labels)
     return basin_labels
 
 
