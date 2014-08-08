@@ -19,7 +19,7 @@ def read_input():
         list of strings comprising test cases
 
     Raises:
-        None
+        AssertionError: on invalid input
     """
 
     lines = sys.stdin.read().splitlines()
