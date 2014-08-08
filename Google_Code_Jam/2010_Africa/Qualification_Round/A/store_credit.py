@@ -17,6 +17,9 @@ def read_input():
         List of test cases, each of which is tuple (credit, items), where
         'credit' is integer store credit amount and 'items' is list of
         integers representing prices of available items
+        
+    Raises:
+        AssertionError: on invalid input
     """
 
     lines = sys.stdin.read().splitlines()
@@ -49,6 +52,9 @@ def solve_test_case(test_case):
     Returns:
         Tuple of two zero-based indices in 'items' whose corresponding values
         sum to 'credit'
+        
+    Raises:
+        AssertionError: on invalid input
     """
 
     # Problem appears to be a kind of knap-sack problem: which items to put in
