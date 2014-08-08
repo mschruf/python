@@ -42,7 +42,7 @@ def divide(numerator, denominator, num_decimal_places):
     pieces.append('.')
 
     # determine fractional part
-    for i in range(num_decimal_places):
+    for _ in range(num_decimal_places):
         numerator *= 10
         num_units = 0
         while numerator >= denominator:
