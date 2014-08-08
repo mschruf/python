@@ -41,6 +41,10 @@ def read_input():
 
     Returns:
         List of test case strings in order provided
+
+    Raises:
+        AssertionError: on invalid input (claimed number of test cases does
+                        not match actual number)
     """
 
     lines = sys.stdin.read().splitlines()
