@@ -162,6 +162,9 @@ def fix_labels(map_labels):
 
     Returns:
         None
+        
+    Raises:
+        AssertionError: on invalid input data (> 26 basins)
     """
 
     # make mapping of old-label --> new-label
