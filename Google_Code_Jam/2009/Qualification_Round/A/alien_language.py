@@ -32,7 +32,7 @@ def read_input():
 
 def get_candidate_characters(test_case):
     """Converts test case string into list where element i is string of
-    candidate xscharacters for position i."""
+    candidate characters for position i."""
 
     state_in_multiple = False
     pattern_chars = []
