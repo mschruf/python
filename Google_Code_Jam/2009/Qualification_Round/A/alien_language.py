@@ -32,7 +32,17 @@ def read_input():
 
 def get_candidate_characters(test_case):
     """Converts test case string into list where element i is string of
-    candidate characters for position i."""
+    candidate characters for position i.
+    
+    Args:
+        test_case: string of alien language word with multiple interpretations
+        
+    Returns:
+        list where i-th element is list of candidate characters for i-th position of argument 'test_case'
+        
+    Raises:
+        AssertionError: on invalid input (invalid character in alien language word string)
+    """
 
     state_in_multiple = False
     pattern_chars = []
@@ -55,7 +65,18 @@ def get_candidate_characters(test_case):
 
 
 def get_num_word_matches(words, test_case):
-    """Returns number of known words which match test case."""
+    """Returns number of known words which match test case.
+    
+    Args:
+        words: list of strings representing known words in alien language
+        test_case: string of alien language word with multiple interpretations
+    
+    Returns:
+        integer representing number of known alien language words which match argument 'test_case'
+        
+    Raises:
+        AssertionError: on invalid input (length of word to be matched not same as length of known words)
+    """
 
     pattern_chars = get_candidate_characters(test_case)
     assert len(pattern_chars) == len(words[0])
