@@ -15,6 +15,10 @@ def main():
 
     Returns:
         Nothing
+
+    Raises:
+        AssertionError: on invalid input (claimed number of test cases
+                        does not match actual number)
     """
 
     lines = sys.stdin.read().splitlines()
