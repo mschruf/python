@@ -18,6 +18,9 @@ def read_input():
         List of test cases, where each test case is map of altitudes as 'height'
         lists of 'width' integers, such that test_case[row][column] represents
         altitude of cell with coordinates (row, column)
+        
+    Raises:
+        AssertionError: on invalid input
     """
 
     lines = sys.stdin.read().splitlines()
